@@ -16,7 +16,7 @@ p {
     font-family: Georgia;
 }
 
-/* Formatação de legendas de imagens */
+/* Formatação de imagens legendadas */
 figure.foto-legendada {
     position: relative;
     border: 4px solid white;
@@ -26,7 +26,17 @@ figure.foto-legendada img {
     width: 100%;
     height: 100%;
 }
-
 figure.foto-legendada figcaption {
+    opacity: 0;
     position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+figure.foto-legenta:hover figcaption {
+    opacity: 1;
 }
