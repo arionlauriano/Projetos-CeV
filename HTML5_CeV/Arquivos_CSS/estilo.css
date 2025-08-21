@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* Formatação de textos */
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+p {
+    text-indent: 30px;
+    text-justify: auto;
+    font-family: Georgia;
+}
+
+/* Formatação de legendas de imagens */
+figure.foto-legendada {
+    position: relative;
+    border: 4px solid white;
+    box-shadow: 2px 2px 4px gray;
+}
+figure.foto-legendada img {
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legendada figcaption {
+    position: absolute;
+}
