@@ -41,3 +41,35 @@ figure.foto-legendada figcaption {
 figure.foto-legendada:hover figcaption {
     opacity: 1;
 }
+
+/* Formatação da área de navegação */
+
+nav#menu ul {
+    list-style-type: none;
+    position: absolute;
+    top: -20px;
+    right: 0px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: aliceblue;
+    padding: 5px;
+    margin: 2px;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+
+nav#menu a {
+    color: black;
+        transition:b 0.5s;
+}
+
+nav#menu a:hover {
+    color:white;
+    background-color: #267D80;
+    color: white;
+}
