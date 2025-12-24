@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais</title>
+</head>
+<body>
+    <h1>Multas</h1>
+    <label for="velocidade">Velocidade:</label><br>
+    <input type="number" placeholder="verificar"><br>
+    <input type="button" value="Verificar" onclick="calcular()"><br>
+    <div class="res">
+
+    </div>
+    <script>
+        function calcular() {
+            var velocidade = parseFloat(document.querySelector("input[type=number]").value);
+            var res = document.querySelector("div.res");
+            if (velocidade > 60) {
+                var multa = (velocidade - 60) * 5;
+                res.innerHTML = `Você foi multado! Sua multa é de R$ ${multa.toFixed(2)}`;
+            } else {
+                res.innerHTML = `Você está dentro do limite de velocidade com a velocidade de <strong>${velocidade}Km/h</strong>. Bom passeio!`;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+MODULO A
+    -> ECMASCRIPT
+        > Uma padronização para manter a consistência em diferentes navegadores e ambientes
+        > RECOMENDAÇÔES para REFERÊNCIAS
+            - developer.mozila.org
+            - ecma-internacional.org
+
+    -> Introddução ao JS
+        > window.alert()
+        > window.confirm()
+        > window.prompt()
+
+MODULO B
+    -> VARIÁVEIS
+        > var x = 'variável x' -> let também pode ser utilizado
+        > typeof -> mostra o tipo da variável
+        > TIPOS PRIMITIVOS
+            - Number
+                . Infinity
+                . NaN -> not a Number
+            - String
+            - Boolean
+                . True/False
+            - Null
+            - Udefined
+            - Object
+                . Array
+            - Function
+
+    -> TRATAMENTO DE DADOS
+        > = -> agregação de valor -> recebe um valor
+        > + 
+            - concatenação -> str + str
+            - adição -> num + num
+        > CONVERSORES
+            - Number() - converte o dado para um número
+            - String() - converte o dado em str
+                . .toString() - outra opção para a conversão em str, porém, a váriável contendo o dado vai antes do '.'
+            - TEMPLATE STRING
+                . `... ${...}` -> uso de placeholders para conversão das variáveis dentro de uma frase, assim é mostrada a informação e não o nome da variável
+            - TRATAMENTO DE STRINGS
+                . .length -> n caracteres da str
+                . .toUpperCase ->  minúsculas > maiúsculas
+                . .toLowerCase ->  maiúsculas > minúsculas
+            - TRATAMENTO DE NÚMEROS
+                . .toFixed(x) -> restringe o valor na variável para x casas decimais
+                . .replace('.', ',') -> '.' vira ','
+                    -> muito útil para sites brasileiros
+                . .toLocalString('lang', {style: 'currency', currency:'BRL'})
+                    -> formata a representação pra BRL -> R$
+                    -> pode ser utilizado para qualquer outra moeda
+
+
+    -> OPERADORES
+        > Aritméticos
+            - + -> adição
+            - - -> subtração
+            - * -> multiplicação
+            - / -> divisão rela
+            - % -> resto da divisão inteira
+            - ** -> potência
+        > Atribuição
+        > Relacionais
+            - >
+            - <
+            - >=
+            - <=
+            - ==
+            - !=
+            - Resultado sempre Boolean
+            - Operações de Identidade
+                . 5 == '5' -> o sinal de igualdade não testa o tipo do dado, portanto, não são, necessariamente, identicos
+                . 5 ==='5' -> já daria False, pois o sinal de comparação sim, analiza os tipos dos dados inseridos, e retorna False quando não forem identicos 
+        > Lógicos
+            - ! -> negação -> NOT 
+            - && -> conjunção -> AND
+            - || -> disjunção -> OR
+        > Ternário
+            - (teste) ? (instruções quando true) : (instruções quando false)
+
+MODULO C
+    -> DOM -> Document Object Model
+        > É um facilitador que representa a página como uma árvore de objetos, permitindo ao código js acessar e manipular dinamicamente o elementos e eventos.
+        > Árvore DOM -> Elementos
+            - WINDOW
+                . Location
+                . Document  > HTML
+                            |> Head
+                            |> Body
+                . History
+        > Métodos de Acesso
+            - Por TagName
+                . getElementsByTagName()
+            - Por Identidade
+                . getElementsByID()
+            - Por Nome
+                . getElementsByName()
+            - Por Classe
+                . getElementsByClass()
+            - Por Seletor
+                . querySelector()
+                . querySelectorAll()
+        > Eventos
+            - Com o mouse:
+                . Mouseenter
+                . Mousemove
+                . Mousedow
+                . Mouseup
+                . Click
+                . Mouseout
+            - Funções
+                . Bloco de código disparado quando o evento triger ocorrer
+                . function nome(parametros){}
+
+MODULO D
+    -> Condicionais
+        > if(condição){
+        } else {
+        }
+        > Tipos
+            - Condição Simpes -> só o "if"
+            - Condição Composta -> "if" e "else"
+            - Condição Múltipla -> "else if"
+                . switch (expressão){
+                    case val1:
+                        instruções
+                        break
+                    case val2:
+                        instruções
+                        break
+                    deafult:
+                        instruções
+                        break
+                        ...
+                }  
+                    Ótimo para quando são valores pontuais
+                    Não funciona bem em casos de comparação, como >,<,=
