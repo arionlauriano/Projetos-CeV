@@ -135,3 +135,9 @@ MODULO D
                 }  
                     Ótimo para quando são valores pontuais
                     Não funciona bem em casos de comparação, como >,<,=
+
+MODULO E
+    -> Loops
+        > wile (condição) {instruções} -> estrutura de repetição com teste no início
+        > do {instruções} while (condição) -> estrutura de repetição com teste no final
+        > for (var x = vInício;condição;x + incremento) {instruções}
