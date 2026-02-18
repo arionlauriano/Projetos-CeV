@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(162, 87, 26);
+}
+
+header {
+    text-align: center;
+    color: azure;
+}
+
+section {
+    padding: 1px;
+    margin: auto;
+    margin-bottom: 15px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.441);
+    width: 70%;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    color: azure;
+}
+#cont {
+    margin: 10px;
+}
+
+img {
+    width: 250px;
+    border-radius: 125px;
+}
+
+#tabuada {
+    width: 150px;
+    border-radius: 10px;
+}
+
